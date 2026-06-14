@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Aura Rernovations Company Ltd| Quality home improvement</title>
-  <!-- Google Fonts & simple reset -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <title>Aura Renovations | Quality Home Improvements</title>
   <style>
     * {
       margin: 0;
@@ -14,141 +12,112 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #ffffff;
       color: #1e293b;
       line-height: 1.5;
       scroll-behavior: smooth;
     }
 
     .container {
-      max-width: 1280px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 0 2rem;
+      padding: 0 1.5rem;
     }
 
-    /* buttons & links */
-    a {
-      text-decoration: none;
-      transition: 0.2s ease;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.75rem 1.75rem;
-      border-radius: 2.5rem;
-      font-weight: 600;
-      font-size: 0.95rem;
-      line-height: 1;
-      transition: all 0.25s;
-      cursor: pointer;
-      border: none;
-      gap: 0.5rem;
-    }
-
-    .btn-primary {
-      background: #2d3e6e;
-      color: white;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.02);
-    }
-
-    .btn-primary:hover {
-      background: #1f2f53;
-      transform: translateY(-2px);
-      box-shadow: 0 12px 20px -12px rgba(45,62,110,0.35);
-    }
-
-    .btn-outline {
-      background: transparent;
-      border: 1.5px solid #2d3e6e;
-      color: #2d3e6e;
-    }
-
-    .btn-outline:hover {
-      background: #2d3e6e;
-      color: white;
-      transform: translateY(-2px);
-    }
-
-    /* navigation */
+    /* Navigation */
     .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.5rem 0;
+      padding: 1.2rem 0;
       flex-wrap: wrap;
       gap: 1rem;
     }
 
     .logo {
-      font-size: 1.8rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      background: linear-gradient(135deg, #1f2f53, #3a5a8f);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #1e3a5f;
     }
 
     .nav-links {
       display: flex;
-      gap: 2rem;
+      gap: 1.8rem;
       align-items: center;
       flex-wrap: wrap;
     }
 
     .nav-links a {
+      text-decoration: none;
       color: #334155;
       font-weight: 500;
-      font-size: 1rem;
+      transition: color 0.2s;
     }
 
     .nav-links a:hover {
-      color: #2d3e6e;
+      color: #1e3a5f;
     }
 
-    /* hero section */
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.8rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: #1e3a5f;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #0f2a45;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1.5px solid #1e3a5f;
+      color: #1e3a5f;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: #1e3a5f;
+      color: white;
+    }
+
+    /* Hero Section */
     .hero {
-      padding: 4rem 0 5rem 0;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 3rem;
-      justify-content: space-between;
+      gap: 2rem;
+      padding: 3rem 0 4rem;
     }
 
     .hero-content {
-      flex: 1.2;
-      min-width: 280px;
-    }
-
-    .hero-badge {
-      background: #eef2ff;
-      color: #2d3e6e;
-      padding: 0.3rem 1rem;
-      border-radius: 2rem;
-      font-size: 0.85rem;
-      font-weight: 600;
-      display: inline-block;
-      margin-bottom: 1.5rem;
+      flex: 1;
+      min-width: 260px;
     }
 
     .hero-content h1 {
-      font-size: 3.2rem;
+      font-size: 2.8rem;
       font-weight: 800;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
       color: #0f172a;
-      margin-bottom: 1.2rem;
+      line-height: 1.2;
     }
 
     .hero-content p {
       font-size: 1.2rem;
       color: #475569;
-      margin-bottom: 2rem;
-      max-width: 550px;
+      margin-bottom: 1.5rem;
     }
 
     .hero-buttons {
@@ -158,103 +127,81 @@
     }
 
     .hero-image {
-      flex: 0.9;
-      background: linear-gradient(145deg, #e9eef5, #ffffff);
-      border-radius: 2.5rem;
-      padding: 1rem;
-      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08);
+      flex: 1;
       text-align: center;
+      background: #f1f5f9;
+      border-radius: 2rem;
+      padding: 2rem;
     }
 
-    .hero-image img {
-      max-width: 100%;
-      border-radius: 1.5rem;
-      display: block;
-      margin: 0 auto;
+    .hero-image span {
+      font-size: 5rem;
     }
 
-    /* placeholder graphic (SVG inline) */
-    .placeholder-graphic {
-      width: 100%;
+    /* Services Section */
+    .services {
+      padding: 4rem 0;
       background: #f8fafc;
-      border-radius: 1.5rem;
-      padding: 2rem 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    /* features */
-    .features {
-      padding: 5rem 0;
-      background-color: #fafcff;
     }
 
     .section-title {
       text-align: center;
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 800;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       color: #0f172a;
     }
 
     .section-sub {
       text-align: center;
-      color: #5b6e8c;
-      max-width: 650px;
-      margin: 0 auto 3rem auto;
+      color: #64748b;
+      margin-bottom: 2.5rem;
     }
 
-    .features-grid {
+    .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
+      gap: 1.8rem;
     }
 
-    .feature-card {
+    .service-card {
       background: white;
-      border-radius: 1.8rem;
       padding: 2rem 1.5rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.02), 0 2px 6px rgba(0,0,0,0.03);
-      transition: all 0.25s;
-      border: 1px solid #eef2f8;
+      border-radius: 1.5rem;
       text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
     }
 
-    .feature-card:hover {
+    .service-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 20px 30px -12px rgba(0,0,0,0.08);
-      border-color: #dce5ef;
     }
 
-    .feature-icon {
-      font-size: 2.8rem;
-      margin-bottom: 1.2rem;
+    .service-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
 
-    .feature-card h3 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-bottom: 0.8rem;
+    .service-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      color: #1e3a5f;
     }
 
-    .feature-card p {
-      color: #5b6e8c;
+    .service-card p {
+      color: #64748b;
     }
 
-    /* about / cta banner */
-    .about-cta {
+    /* About Section */
+    .about {
       padding: 4rem 0;
     }
 
     .about-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 3rem;
+      gap: 2rem;
       align-items: center;
-      background: #f1f5f9;
-      border-radius: 2.5rem;
-      padding: 3rem;
     }
 
     .about-text {
@@ -262,322 +209,206 @@
     }
 
     .about-text h2 {
-      font-size: 2rem;
-      font-weight: 800;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
     }
 
     .about-text p {
-      margin-bottom: 1.5rem;
-      color: #334155;
+      color: #475569;
+      margin-bottom: 1rem;
     }
 
-    .stats {
-      flex: 0.8;
+    .about-stats {
+      flex: 1;
       display: flex;
-      gap: 2rem;
+      gap: 1.5rem;
       justify-content: center;
       flex-wrap: wrap;
     }
 
-    .stat-item {
-      text-align: center;
-      background: white;
+    .stat {
+      background: #f1f5f9;
       padding: 1.5rem;
-      border-radius: 2rem;
+      border-radius: 1.2rem;
+      text-align: center;
       min-width: 120px;
     }
 
     .stat-number {
-      font-size: 2.4rem;
+      font-size: 2rem;
       font-weight: 800;
-      color: #2d3e6e;
+      color: #1e3a5f;
     }
 
-    /* contact & footer */
+    /* Contact Section */
     .contact {
-      padding: 4rem 0 3rem;
-    }
-
-    .contact-card {
-      background: linear-gradient(120deg, #ffffff, #fefefe);
-      border-radius: 2rem;
-      padding: 2.5rem;
+      padding: 4rem 0;
+      background: #f8fafc;
       text-align: center;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.05);
-      border: 1px solid #eef2f0;
     }
 
-    .contact-card h2 {
+    .contact h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
 
-    .contact-email {
-      font-size: 1.3rem;
-      font-weight: 600;
-      background: #eef2ff;
-      display: inline-block;
-      padding: 0.6rem 1.8rem;
-      border-radius: 3rem;
-      margin: 1.5rem 0;
-      color: #1f2f53;
+    .contact p {
+      color: #475569;
+      margin-bottom: 1rem;
     }
 
-    .footer {
-      border-top: 1px solid #e9edf2;
-      padding: 2rem 0;
+    .contact-info {
       margin-top: 2rem;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1rem;
-      color: #5b6e8c;
     }
 
-    /* form styles */
-    .form-group {
-      margin: 1.5rem 0 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
+    .contact-phone {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #1e3a5f;
+      margin: 0.5rem 0;
     }
-    input, textarea {
-      padding: 0.9rem 1.2rem;
-      border-radius: 2rem;
-      border: 1px solid #cfdfed;
-      font-family: inherit;
-      width: 260px;
-      font-size: 0.9rem;
-      outline: none;
-      transition: 0.2s;
+
+    .contact-email {
+      font-size: 1.2rem;
+      color: #475569;
     }
-    input:focus, textarea:focus {
-      border-color: #2d3e6e;
-      box-shadow: 0 0 0 2px rgba(45,62,110,0.2);
-    }
-    textarea {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 1.5rem;
-      resize: vertical;
-    }
-    .form-success {
-      color: #2b7e3a;
-      margin-top: 1rem;
+
+    /* Footer */
+    .footer {
+      background: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 2rem;
       font-size: 0.9rem;
     }
-    @media (max-width: 780px) {
-      .hero-content h1 { font-size: 2.4rem; }
-      .container { padding: 0 1.5rem; }
-      .navbar { flex-direction: column; }
-      .about-grid { padding: 2rem; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+      .nav-links {
+        justify-content: center;
+      }
+      .section-title {
+        font-size: 1.6rem;
+      }
+      .contact-phone {
+        font-size: 1.3rem;
+      }
     }
   </style>
 </head>
 <body>
 
-<header>
+  <!-- Navigation -->
   <div class="container">
     <nav class="navbar">
-      <div class="logo">Elevate<span style="color:#2d3e6e;">&Co</span></div>
+      <div class="logo">🏠 Aura Renovations</div>
       <div class="nav-links">
         <a href="#">Home</a>
-        <a href="#features">Services</a>
+        <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="#" class="btn-outline btn" style="padding: 0.5rem 1.2rem;">Get in touch</a>
       </div>
     </nav>
   </div>
-</header>
 
-<main>
   <!-- Hero Section -->
   <div class="container">
     <div class="hero">
       <div class="hero-content">
-        <span class="hero-badge">✨ trusted by 500+ businesses</span>
-        <h1>Smart solutions for<br>growing your business</h1>
-        <p>We help small businesses scale with modern strategy, digital tools, and creative direction. Ready to elevate your brand?</p>
+        <h1>Transform your home with expert renovations</h1>
+        <p>Kitchens, bathrooms, extensions — quality craftsmanship you can trust. Free estimates and premium materials.</p>
         <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Start a project →</a>
-          <a href="#features" class="btn btn-outline">Explore services</a>
+          <a href="#contact" class="btn btn-primary">Get free quote →</a>
+          <a href="#services" class="btn btn-outline">View services</a>
         </div>
       </div>
       <div class="hero-image">
-        <div class="placeholder-graphic">
-          <svg width="240" height="180" viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="20" y="30" width="100" height="100" rx="24" fill="#2d3e6e" fill-opacity="0.1" stroke="#2d3e6e" stroke-width="1.5"/>
-            <circle cx="200" cy="80" r="45" fill="#eef2ff" stroke="#2d3e6e" stroke-width="1.5"/>
-            <path d="M130 150 L200 120 L250 160 L170 180 L130 150Z" fill="#2d3e6e" fill-opacity="0.2" stroke="#2d3e6e" stroke-width="1.2"/>
-            <text x="60" y="85" font-family="Inter" font-size="20" font-weight="600" fill="#2d3e6e">📊</text>
-            <text x="190" y="90" font-family="Inter" font-size="22" fill="#2d3e6e">🚀</text>
-          </svg>
-          <p style="margin-top: 1rem; font-weight: 500; color: #2d3e6e;">growth dashboard</p>
-        </div>
+        <span>🔨🏡</span>
       </div>
     </div>
   </div>
 
-  <!-- Features Section -->
-  <section id="features" class="features">
+  <!-- Services Section -->
+  <section id="services" class="services">
     <div class="container">
       <h2 class="section-title">What we offer</h2>
-      <p class="section-sub">Tailored services to help your business thrive — from branding to digital automation.</p>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">📈</div>
-          <h3>Strategy & Analytics</h3>
-          <p>Data-driven decisions & market insights to boost your ROI.</p>
+      <p class="section-sub">Professional renovation services tailored to your needs</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3>Full Home Renovation</h3>
+          <p>Complete transformation from floor to ceiling. Modern designs, quality finishes.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">🎨</div>
-          <h3>Creative Branding</h3>
-          <p>Distinctive visual identity and messaging that connects.</p>
+        <div class="service-card">
+          <div class="service-icon">🍳</div>
+          <h3>Kitchen Remodeling</h3>
+          <p>Custom cabinets, countertops, and lighting. Make your kitchen the heart of your home.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">⚡</div>
-          <h3>Digital Tools</h3>
-          <p>Website, automation & CRM to streamline operations.</p>
+        <div class="service-card">
+          <div class="service-icon">🚿</div>
+          <h3>Bathroom Updates</h3>
+          <p>Tiling, fixtures, waterproofing experts. Create your dream spa bathroom.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon">🤝</div>
-          <h3>Consulting</h3>
-          <p>One-on-one expert guidance for sustainable growth.</p>
+        <div class="service-card">
+          <div class="service-icon">🪟</div>
+          <h3>Home Extensions</h3>
+          <p>Add more space and value to your property. Seamless integration with existing structure.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About + stats -->
-  <section id="about" class="about-cta">
+  <!-- About Section -->
+  <section id="about" class="about">
     <div class="container">
       <div class="about-grid">
         <div class="about-text">
-          <h2>We're on a mission to elevate small enterprises</h2>
-          <p>Founded by entrepreneurs, we understand the challenges of scaling with limited resources. Our team blends creativity and tech to deliver real, measurable results — without the big-agency overhead.</p>
-          <a href="#contact" class="btn btn-primary" style="background:#1f2f53;">Let's talk →</a>
+          <h2>Over 10 years of renovation experience</h2>
+          <p>At Aura Renovations, we take pride in delivering high-quality home improvements that stand the test of time. Our team of skilled craftsmen works closely with you from concept to completion.</p>
+          <p>Fully licensed, insured, and committed to excellence. Your satisfaction is our guarantee.</p>
         </div>
-        <div class="stats">
-          <div class="stat-item">
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-number">150+</div>
+            <div>Projects</div>
+          </div>
+          <div class="stat">
             <div class="stat-number">98%</div>
-            <div>client retention</div>
+            <div>Satisfied</div>
           </div>
-          <div class="stat-item">
-            <div class="stat-number">3.2x</div>
-            <div>avg. growth rate</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">450+</div>
-            <div>projects delivered</div>
+          <div class="stat">
+            <div class="stat-number">5★</div>
+            <div>Rating</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact & form section -->
+  <!-- Contact Section -->
   <section id="contact" class="contact">
     <div class="container">
-      <div class="contact-card">
-        <h2>Ready to elevate your business?</h2>
-        <p style="color:#475569;">Reach out and we’ll get back within 24 hours.</p>
-        <div class="contact-email">
-          ✉️ info@aurarenovations.com
-        </div>
-        <form id="contactForm">
-          <div class="form-group">
-            <input type="text" id="name" placeholder="Your name" required>
-            <input type="email" id="email" placeholder="Email address" required>
-          </div>
-          <div class="form-group">
-            <textarea rows="2" id="message" placeholder="Tell us about your project..." style="width: 80%;"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="background:#2d3e6e; margin-top: 0.5rem;">Send message →</button>
-          <div id="formFeedback" class="form-success"></div>
-        </form>
-        <p style="margin-top: 2rem; font-size: 0.8rem; color:#7c8ba0;">No spam, just honest conversations.</p>
+      <h2>Ready to start your project?</h2>
+      <p>Contact us today for a free, no-obligation consultation and quote.</p>
+      <div class="contact-info">
+        <div class="contact-phone">📞 0740 123 4567</div>
+        <div class="contact-email">✉️ info@aurarenovations.com</div>
       </div>
+      <p style="margin-top: 1.5rem; font-size: 0.9rem;">We respond within 24 hours</p>
     </div>
   </section>
-</main>
 
-<footer>
-  <div class="container">
-    <div class="footer">
-      <span>© 2026 Aura Rernovations — small business growth partners</span>
-      <span style="display: flex; gap: 1.5rem;">
-        <a href="#" style="color:#4b6584;">LinkedIn</a>
-        <a href="#" style="color:#4b6584;">Instagram</a>
-        <a href="#" style="color:#4b6584;">Twitter</a>
-      </span>
-    </div>
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Aura Renovations Company Ltd. All rights reserved. Quality guaranteed.</p>
+  </footer>
 
-<script>
-  // smooth scrolling for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const targetId = this.getAttribute('href');
-      if (targetId === "#" || targetId === "") return;
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        e.preventDefault();
-        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-
-  // contact form handling (simulate submission)
-  const contactForm = document.getElementById('contactForm');
-  const feedbackDiv = document.getElementById('formFeedback');
-
-  contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    if (!name || !email) {
-      feedbackDiv.textContent = '❌ Please fill in name and email.';
-      feedbackDiv.style.color = '#c2410c';
-      setTimeout(() => { feedbackDiv.textContent = ''; }, 3000);
-      return;
-    }
-    if (!email.includes('@') || !email.includes('.')) {
-      feedbackDiv.textContent = '❌ Please enter a valid email address.';
-      feedbackDiv.style.color = '#c2410c';
-      setTimeout(() => { feedbackDiv.textContent = ''; }, 3000);
-      return;
-    }
-
-    // simulate sending (no backend)
-    feedbackDiv.textContent = '✨ Sending your message...';
-    feedbackDiv.style.color = '#2d3e6e';
-    
-    // mimic network delay
-    setTimeout(() => {
-      feedbackDiv.innerHTML = '✅ Thank you, ' + name + '! We’ll reply to ' + email + ' within 24 hours.';
-      feedbackDiv.style.color = '#2b7e3a';
-      contactForm.reset();
-      // clear message after 5 seconds
-      setTimeout(() => {
-        if (feedbackDiv) feedbackDiv.innerHTML = '';
-      }, 5000);
-    }, 800);
-  });
-
-  // hover effect subtle for nav buttons
-  const navBtn = document.querySelector('.nav-links .btn-outline');
-  if (navBtn) {
-    navBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-    });
-  }
-</script>
 </body>
 </html>
